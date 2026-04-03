@@ -1,0 +1,74 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 28px;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.navbar-brand {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 4px;
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+    color: var(--text-primary);
+    background: var(--bg-input);
+}
+
+.nav-active {
+    color: var(--accent) !important;
+    background: var(--accent-glow) !important;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.navbar-user {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.navbar-logout {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    padding: 6px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: 'DM Sans', sans-serif;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.navbar-logout:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}

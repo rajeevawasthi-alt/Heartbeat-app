@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
-import { auth, db } from "../../firebase";
+import { auth, db } from "../../firebase/config";
 
 export default function Signup({ onSwitch }) {
     const [name, setName] = useState("");
